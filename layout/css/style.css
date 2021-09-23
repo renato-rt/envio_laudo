@@ -1,0 +1,546 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  /*padding-top: 50px;*/
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 00px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+html, body {
+    margin: 0px;
+    background: url('../img/background.jpg') repeat;
+}
+
+.relatorio{
+  clear: both;
+  text-align: center;
+  margin:auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.relatorio2{
+  clear: both;
+  overflow: hidden;
+  text-align: left;
+  max-width: 95%;
+  margin:auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title{ 
+  text-align: center;
+  font-size: 25px;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #1AADF2;
+  box-shadow: 0px 0px 10px -3px #302F31;
+  transition: all 0.9s ease;
+  min-height: 160px;
+  clear: both;
+  /*background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  z-index: 120;
+  top:0;*/
+}
+
+.title_paciente{ 
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+  font-size: 25px;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #1AADF2;
+  box-shadow: 0px 0px 10px -3px #302F31;
+  transition: all 0.9s ease;
+  height: 145px;
+  /*background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  z-index: 120;
+  top:0;*/
+}
+
+.texto{
+  border-radius: 0px 0px 5px 5px; 
+  background-color: #F7F5F5; 
+  border: 1px solid #EEE;
+  width: 780px;
+  color: #999;
+  text-align: justify;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 165px;
+}
+
+.botao{ 
+  width: 31%;
+  margin-top: -10px;
+  padding: 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.links{
+  border-radius: 0px 0px 5px 5px; 
+  max-width: 912px;
+  min-height:590px;
+  color: #999;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: -40px;
+  clear: both;
+  overflow: hidden;
+}
+
+.font_tab{
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.page_paciente{
+  border-radius: 0px 0px 5px 5px; 
+  max-width: 95%; /*987px;*/
+  min-height:590px;
+  color: #999;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 2px 10px 10px 10px;
+  font-size: 16px;
+  margin-top: -5px;
+  clear: both;
+  overflow: hidden;
+}
+
+.botao_conteudo{
+  clear:both;
+  margin-top:20px;
+  float:left;
+  width:100%;
+  min-height:120px;
+  border-radius:0px 0px 9px 9px;
+  font-size:18px;
+  padding:10px;
+  text-align:center;
+}
+
+.autenticacao{
+  clear:both;
+  float:left;
+  width:100%;
+  min-height:120px;
+  border-radius:0px 0px 5px 5px; 
+  font-size:19px;
+  padding:10px;
+  text-align:justify;
+  margin-top:-15px;
+}
+
+.login{
+  border-radius: 0px 0px 5px 5px; 
+  width: 912px;
+  height: 590px;
+  color: #999;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: -40px;
+  clear: both;
+  overflow: hidden;
+}
+
+.icones{
+  float: left;
+  margin-right: 20px;
+  width: 100%;
+  border-radius:5px 5px 0px 0px;
+  /*border-radius:20px 20px 0px 0px;*/
+  color:#fff;
+  font-weight: bold;
+  padding: 5px 3px 5px 3px;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: inset 0px -11px 8px -10px rgba(69, 69, 69, 0.59);
+}
+
+.rodape{
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #1AADF2;
+  background-image: url("../img/login/rodape.jpg");
+  box-shadow: 0px 0px 10px -3px #302F31;
+  width: 100%;
+  height: 75px;
+  clear: both;
+  text-align: center;
+  padding: 7px;
+}
+
+.buttonlg{
+  width: 72px;
+  height: 60px;
+  background-image: url('../img/login/salvar.png');
+  cursor:pointer;
+}
+
+.campo_texto{
+  width: 355px;
+  height: 58px;
+  border: 1px solid #DDD;
+  border-radius: 7px;
+  padding-left: 5px;
+  color: #555;
+  font-size: 18px;
+  font-family: NewsGoth Lt BT,"Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+.cor_letra{
+  color: #5F5E5E;
+}
+
+.tamanho{
+  font-size: 17px;
+}
+
+.separator{
+  clear: both;
+  /*border-top: 1px solid #eee;*/
+  border-top: 1px dotted #D5D5D5;
+  margin-top: 4px; 
+  margin-bottom: 10px;
+}
+
+.thumb
+{
+	float: left; 
+	margin: 1px; 
+	padding: 2px 0 0 2px; 
+	width: 42px; 
+	height: 42px;
+	cursor: pointer;	
+}
+
+.thumbClicked
+{
+	border: 1px solid #FFF;	
+}
+
+.separator2{
+  clear: both;
+  margin-top: 2px; 
+  margin-bottom: 10px;
+}
+
+.separator3{
+  clear: both;
+  margin-top: 25px; 
+  margin-bottom: 25px;
+}
+
+.voltar{
+  clear:both;
+  float: right;
+  border-radius: 4px;
+  margin-top: -3px;
+  text-align: center;
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 16px;
+  /*background: #31A7FE; */
+  background: -webkit-linear-gradient(#1076C2,#31A7FE); 
+  background: -o-linear-gradient(#1076C2,#31A7FE); 
+  background: -moz-linear-gradient(#1076C2,#31A7FE); 
+  background: linear-gradient(#1076C2,#31A7FE);
+  color: #FFF;
+  font-weight: bold;
+}
+
+.cadastro{
+  float: right;
+  border-radius: 20px;
+  border: 1px solid #EEE;
+  margin-top: -3px;
+  text-align: center;
+  padding: 5px 0px 0px 0px; 
+  cursor: pointer;
+  font-size: 16px;
+  background: -webkit-linear-gradient(#FFF,#E6E6E7); 
+  background: -o-linear-gradient(#FFF,#E6E6E7); 
+  background: -moz-linear-gradient(#FFF,#E6E6E7); 
+  background: linear-gradient(#FFF,#E6E6E7);
+}
+
+.recuperar{
+  float: right;
+  border-radius: 20px;
+  border: 1px solid #EEE;
+  margin-top: -3px;
+  text-align: center;
+  padding: 5px 0px 0px 0px; 
+  cursor: pointer;
+  font-size: 16px;
+  background: -webkit-linear-gradient(#FFF,#E6E6E7); 
+  background: -o-linear-gradient(#FFF,#E6E6E7); 
+  background: -moz-linear-gradient(#FFF,#E6E6E7); 
+  background: linear-gradient(#FFF,#E6E6E7);
+}
+
+.msgProducao{
+  margin: auto;
+  top: 0px;
+  clear: both;
+  float: inherit;
+  text-align: center;
+  /*background: #036 url("../img/login/imgMsgProducao.png") top repeat-x;*/
+  background: -webkit-linear-gradient(#FB1414,#981919); 
+  background: -o-linear-gradient(#FB1414,#981919); 
+  background: -moz-linear-gradient(#FB1414,#981919); 
+  background: linear-gradient(#FB1414,#981919);
+  color: #FFF;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.subtitle4
+{
+  font-size: 24px;
+  color: #333;
+  float: left;
+  text-align:center;
+}
+
+.box
+{
+  float: left;
+  margin: 10px; 
+}
+
+.lgfrm
+{
+  width: 300px;
+  height: 40px;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  padding-left: 5px;
+  color: #555;
+  font-size:18px; 
+  font-family: NewsGoth Lt BT, "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;  
+}
+
+.labeldesc{
+  font-family: NewsGoth Lt BT, "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: none;
+  color:#555;
+  display: inline;
+  padding: 0.2em 0em 0.3em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: center;
+  border-radius: 0.25em;
+}
+
+.form_cadastro{
+  border-radius: 0px 0px 5px 5px; 
+  width: 912px;
+  color: #999;
+  vertical-align: center;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: -40px;
+  clear: both;
+  overflow: hidden;
+  /*background-color: #F7F5F5; */
+  /*border:1px solid #eee;*/
+}
+
+.li_menu{
+  margin-top: 2.5px;
+  color: #5F5E5E;
+  width: 200px;
+}
+
+.table_th{
+  vertical-align: middle;
+  text-align: center;
+}
+
+.box_sessao{
+  float: right;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  margin-top: -1px;
+  clear: both;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.65);
+  box-shadow: inset 0px -11px 8px -10px rgba(69, 69, 69, 0.59);
+}
+
+.logotipo_title{
+  float: left;
+  position: relative;
+  clear: both;
+}
+
+.recuperar_senha{
+  border-radius: 0px 0px 5px 5px; 
+  width: 912px; 
+  min-height: 590px;
+  vertical-align: center;
+  margin: auto;
+  font-family: NewsGoth Lt BT,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: -40px;
+  clear: both;
+  overflow: hidden;
+}
+.buttonlg2 {
+    width: 202px;
+    height: 57px;
+    background: transparent url("../img/login/salvar3.png") repeat scroll 0% 0%;
+    float: left;
+    cursor: pointer;
+}
+
+.buttonlg3 {
+    width: 202px;
+    height: 57px;
+    background: transparent url("../img/login/recuperar.png") repeat scroll 0% 0%;
+    float: left;
+    cursor: pointer;
+}
+/*box-shadow superior e inferior
+  box-shadow: inset 0px 11px 8px -10px #CCC,inset 0px -11px 8px -10px #CCC; 
+*/
+
+
+
+
