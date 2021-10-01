@@ -120,6 +120,9 @@ echo "Dados Tecnicos e assunto, ok\n";
 		   </div>
 	           </div>
 	     	   </div>
+				<div>
+				
+				</div>
 	           <div style='clear:both;text-align:center;max-width:100%;padding:0px 50px;
 		   font-size:11px;'>***esta &eacute; uma mensagem autom&aacute;tica por favor n&atilde;o responda***</div>";
 		    
